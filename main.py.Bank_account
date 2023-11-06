@@ -1,0 +1,24 @@
+#Write a Python class named BankAccount with two attributes, owner and balance, and two methods, deposit and withdraw.
+
+
+
+
+
+Account_Balance = 500
+print('Welcome to Alamri Bank')
+print('Your account balance is',{500})
+user_choice = input('How much money would you like to deposit: ')
+if int(user_choice) == 0:
+    user_withdraw = input('How much money you would like to withdraw: ')
+    if int(user_withdraw) > Account_Balance :
+        print('Your account balance is',Account_Balance)
+        breakpoint()
+    else :
+      New_balance = 500 - int(user_withdraw)
+      print(New_balance)
+elif int(user_choice) > 0 :
+    New_balance_deposit  = 500 + int(user_choice)
+    print(New_balance_deposit)
+else :
+    print('Unfortunatly the amount you entered can not be done,thank you for using Alamri Bank')
+    breakpoint()
